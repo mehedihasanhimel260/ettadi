@@ -7,7 +7,7 @@
                 <div class="container-fluid">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                        <h6 class="mb-4">Hoverable Table</h6>
+                        <h6 class="mb-4">Category Table</h6>
                     </li>
                   </ul>
                   <li class="d-flex">

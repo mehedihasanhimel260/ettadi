@@ -23,7 +23,8 @@
                     <a href="/" class="dropdown-item">Typography</a>
                 </div>
             </div>
-            <a href="{{route('categories.index')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Categories</a>
+            <a href="{{route('categories.index')}}" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Categories</a>
+            <a href="{{route('products.index')}}" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Products</a>
         </div>
     </nav>
 </div>
