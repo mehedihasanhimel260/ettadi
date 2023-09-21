@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\frontend\homepageController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SettingsController;
@@ -17,9 +18,9 @@ use Illuminate\Support\Facades\Route;
 |settingscategories
 */
 
-Route::get('/', function () {
-    return view('frontend.home.index');
-});
+// Route::get('/', function () {
+//     return view('frontend.home.index');
+// });
 
 Auth::routes();
 Route::get('/home', [HomeController::class, 'redirect']);
@@ -36,4 +37,4 @@ Route::middleware(['auth', 'user.access:admin'])->group(function () {
     Route::resource('/admin/settings', SettingsController::class);
 });
 
-
+Route::get('/', [homepageController::class,'index']);

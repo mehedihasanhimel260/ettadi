@@ -1,12 +1,4 @@
     {{-- Retrieve settings from the database --}}
-    @php
-    use App\Models\Settings;
-    use Illuminate\Support\Str;
-    $setting = Settings::first();
-    $settings=$setting->website_title;
-    $wesitetitle_1 = Str::substr($settings, 0, 1);
-    $wesitetitle_2 = Str::substr($settings, 1);
-    @endphp
 <div class="container-fluid">
     <div class="row bg-secondary py-2 px-xl-5">
         <div class="col-lg-6 d-none d-lg-block">

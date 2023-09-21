@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Settings;
 use Illuminate\Http\Request;
-
 class SettingsController extends Controller
 {
     /**
@@ -12,6 +11,7 @@ class SettingsController extends Controller
      */
     public function index()
     {
+
         $settings = Settings::first();
         return view('backend.admin.settings.index',compact('settings'));
     }
