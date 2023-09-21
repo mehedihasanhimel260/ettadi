@@ -25,6 +25,7 @@
             </div>
             <a href="{{route('categories.index')}}" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Categories</a>
             <a href="{{route('products.index')}}" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Products</a>
+            <a href="{{route('settings.index')}}" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Settings</a>
         </div>
     </nav>
 </div>

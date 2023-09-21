@@ -1,4 +1,12 @@
-
+    {{-- Retrieve settings from the database --}}
+    @php
+    use App\Models\Settings;
+    use Illuminate\Support\Str;
+    $setting = Settings::first();
+    $settings=$setting->website_title;
+    $wesitetitle_1 = Str::substr($settings, 0, 1);
+    $wesitetitle_2 = Str::substr($settings, 1);
+    @endphp
 <div class="container-fluid">
     <div class="row bg-secondary py-2 px-xl-5">
         <div class="col-lg-6 d-none d-lg-block">
@@ -30,10 +38,11 @@
             </div>
         </div>
     </div>
+
     <div class="row align-items-center py-3 px-xl-5">
         <div class="col-lg-3 d-none d-lg-block">
             <a href="" class="text-decoration-none">
-                <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+                <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">{{$wesitetitle_1}}</span> {{$wesitetitle_2 }}</h1>
             </a>
         </div>
         <div class="col-lg-6 col-6 text-left">

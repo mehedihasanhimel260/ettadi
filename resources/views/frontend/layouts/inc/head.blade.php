@@ -20,4 +20,5 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ asset('inc/frontend') }}/css/style.css" rel="stylesheet">
+
 </head>

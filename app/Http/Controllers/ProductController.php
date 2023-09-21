@@ -43,8 +43,9 @@ class ProductController extends Controller
         ]);
         $product = $request->all();
         if ($image = $request->file('image')) {
-            $destinationPath = 'inc/backend/img/';
-            $productImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $destinationPath = 'inc/frontend/img/';
+            // $productImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $productImage =$image->getClientOriginalName();
             $image->move($destinationPath, $productImage);
             $product['image'] = "$productImage";
         }
@@ -96,8 +97,9 @@ class ProductController extends Controller
         $product->qty = $request->input('qty');
 
         if ($image = $request->file('image')) {
-            $destinationPath = 'inc/backend/img/';
-            $productImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $destinationPath = 'inc/frontend/img/';
+            // $productImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $productImage =$image->getClientOriginalName();
             $image->move($destinationPath, $productImage);
 
             // Delete old image if it exists

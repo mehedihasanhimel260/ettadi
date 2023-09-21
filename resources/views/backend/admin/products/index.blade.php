@@ -31,7 +31,7 @@
                     @foreach ($products as $product)
                     <tr>
                         <th scope="row">{{ $loop->iteration }}</th>
-                        <td><img src="{{asset('inc/backend/img').'/' .$product->image}}" height="50px" width="50px"> </td>
+                        <td><img src="{{asset('inc/frontend/img').'/' .$product->image}}" height="50px" width="50px"> </td>
                         <td>{{$product->title}}</td>
                         <td>{{$product->price}}</td>
                         <td>{{$product->discount_price}}</td>
